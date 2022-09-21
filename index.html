@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/612d0cd1ef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Convertidor de unideades</title>
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        <h2>unit converter</h2>
+        
+    </header>
+    <main>
+        <div class="input-container">
+            <div class="title-container">
+                <h2>convert</h2>
+            </div>
+            <div class="converter">
+                <div class="unit-container">
+                    <select id="unitSelector">
+                        <option value="km-miles">km → miles</option>
+                        <option value="miles-km">miles → km</option>
+                        <option value="meters-feets">meters → feets</option>
+                        <option value="feets-meters">feets →meters</option>
+                        <option value="cm-inches">cm → inches</option>
+                        <option value="inches-cm">inches → cm</option>
+                    </select>
+                    
+                    <i class="fa-solid fa-arrow-right-arrow-left" id="invertBtn"></i>
+                </div>   
+                <div class="number-container">
+                    <input type="number" id="valueToConvert">
+                    <p id="unitToConvert">km</p>
+                </div>
+            </div>
+                
+            
+
+            
+            <div class="result-container" >
+                <i class="fa-regular fa-heart" id="saveResult"></i>
+                <p id="result"> </p>
+            </div>
+            </div>
+        </div>
+
+        <div class="saved-container">
+            <h2>saved</h2>
+            <div class="saved-list-container" id="showSaved"></div>
+        </div>
+    </main>
+    <footer>
+        <p>Terms of Service</p>
+        <p>Privacy Policy</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
